@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/headerstyle.css">
+    <link rel="stylesheet" href="./css/posterstyle.css">
+    <link rel="stylesheet" href="./css/hotstyle.css">
+    <link rel="stylesheet" href="./css/thrillerstyle.css">
+    <link rel="stylesheet" href="./css/warstyle.css">
+    <link rel="stylesheet" href="./css/onlystyle.css">
+    <link rel="stylesheet" href="./css/anistyle.css">
+    <link rel="stylesheet" href="./css/rewatchstyle.css">
+    <link rel="stylesheet" href="./css/footerstyle.css">
+    <link rel="stylesheet" href="./css/modalstyle.css">
+    <title>NEFLIIX</title>
+</head>
+<body>
+
+    <!-- modal -->
+    <div class="modal hidden">
+        <div class="thumbnailContainer">
+            <button class="cloModal">X</button>
+            <img class="thumbnailElement">
+        </div>
+        <div class="thumnailInfo">
+            <h2 id="modalTitle">상세 정보</h2>
+            <p id="modalContetns">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus incidunt repudiandae sed, cupiditate magnam deleniti expedita qui quae itaque, quis mollitia error sapiente assumenda non, perspiciatis aperiam dignissimos provident!</p>
+        </div>
+    </div>
+
+
+    <!-- header -->
+    <header>
+        <div class="header_container">
+                <a href="#">
+                    <svg viewBox="0 0 111 30" data-uia="netflix-logo" class="svg-icon svg-icon-netflix-logo" aria-hidden="true" focusable="false" id="logo">
+                        <path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14"></path>
+                    </svg>
+                </a>
+                <ul class="mainPart">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">시리즈</a></li>
+                    <li><a href="#">영화</a></li>
+                    <li><a href="#">NEW! 요즘 대세 콘텐츠</a></li>
+                    <li><a href="#">내가 찜한 콘텐츠</a></li>
+                    <li><a href="#">언어별로 찾아보기</a></li>
+                </ul>
+            <div class="subPart">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="search">
+                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" id="bell">
+                    <path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" id="profile">
+                    <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+            </div>
+    </header>
+
+    <!-- main poster -->
+    <div class="mainPoster">
+        <div class="mainPosterImg">
+            <div class="mainPosterInfo">
+                <div class="title">
+                    <img src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABbfttmT0dofH2mfykghD4m7mpfOCPnnWeLUps_JJpxct-J7-rPHAYo8PUqRQom1wTDgrFRlbOyjtOjU63qMx3CFqCCBiQg5RoYxAWWkMo6Xv64qZIpMBVM6LNZtVBXydPg-4t7AIhshO9XifjHq5oNqGrDZhR8OoI3o7tIrjI_CbngTIgt23PA.webp?r=718" class="posterTitle">
+                </div>
+                <div class="summary">
+                    <p>1919년 영국 버밍엄. 토마스 셸비를 주축으로 한 셸비 가문은 악명 높은 범죄 조직 <br> "피키 블라인더스"를 이끌고 암흑가의 정상을 차지하기 위해 수단과 방법을 가리지 않는다.</p>
+                </div>
+                <div class="detail">
+                    <button type="button" class="play">
+                        <p>재생</p>
+                    </button>
+                    <button type="button" class="mainPosterDetail">
+                        <p class="detailTxt">상세 정보</p>
+                    </button>
+                </div>
+            </div>
+            <!-- hot contents -->
+            <div class="hotContetns">
+                <div id="hotTxt">
+                    <h2>오늘 대한민국의 TOP 10 시리즈</h2>
+                </div>
+                <div class="hotContentsPoster">
+                    <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaTK-jky-I5dvAvS0kAhXGMZc_2UkpKyDT8WNFM2FqirxCycW3nnAnz_j6bg9wif3pfhYS-aPidggcuZcXZojGxrlOD3C78pCoOc0jY9X-OZXwYKlQXaZwQClXzVj-j-LBD0lZSSBpYNiWFNuNCfd2vbk_9VmAVizKTE5_2By7owv1AdodI7KpgB9qZ7ATH0FHpA2viAUl_KVEZu12oUq-qFq0BTDiX_us-bhdEyXKCqlTZZlYii6uFD462K_JDFOvkohpFQi0w5VZr0gKhIfMet3b61Vmi6lkOL31GY-T4MqFaxCvkKcT5DljjdByMzim14HIMHWPPb8VmQ_tpYIX0FkMiOfVp5JjSMn0qMu34_frTZdgwyFbhBw50jXkRwpj9R5pF8oQiUmshLr2ahs41KrV0DpPFCEpmnTSjJ201B4N6fpRL3LLzsMGU5rguhapkLxPAe.webp?r=ff1">
+                    <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRUhLw_aBPzkS-uWT9bcQy7pOzeW4vydw5P3hHNuOG8V7qxTWikzF7qVfv1xruU9iXepn7VDQjWVY09oV3fw41FlKl20uuf25LMKvowjAW_IWzJnOXtQMTnBsjMn_IaxC4tVY_D3CPZb8OwWPS3nfgpXTLmEBYaX6dJgIa9IadKTaGyq8VDDpnUMFcP0DrykszqWrTfoH0VVDIjlqvw_emYVkayaRAW58qoZjrc6lzPPFt0URLGU-ZQqIj_GydfcnPMkW1qLRVivfUuT-bT6pDdZ8wIOozYGxfqKetRzJ_yO7EM16tui_Gx9XLaGfVUPeV0V.jpg?r=e44">
+                    <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU8i3_FVcBdHgNQUGNAhqEPSylZ_nzKXUphSXC9roSkNS2TpmTPpJwqJPI6DbnpXWicQToJYKlsR3-8yWYS12z_8XcHd1YXMqkU.webp?r=ebb">
+                    <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbdJywWO97UXGQd1jCDX-wNgMPPf_mlfqW_xiSa7Tr0ONXIIOeWxBetjQdd8q1Alc8QMloL8y-DNcbX-JuhaIDWBChX3bTN9simFZ6fdMvfCZ8S_Fda6ro14EBBVFyrMkn_v.jpg?r=3c7">
+                    <img class="thumbnail" src="https://occ-0-988-325.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaCuueABmaHinrvkYMD_sKlC7dVdydzZKsMI6ux_h48Pd-oydBomll5YyT-6fmAEVlfWy1NsawfMpzYHUw6HIeh6yJlF4KPL4054vs3sqYvbzFkl92A4HJq7RdkXgItKdVRYBX6D1FsiFXV9201SunZttwiHoWOxB3PF6rPhQLQnZjpbIPq8z1nvWHlQ0b57cyh1qV-Gkoo7c6oyJOZ0ywrttZtqkoS8CCcI4T9ciT-SulYyiMdF_5wmXIDM8Tcg2B98LphrW1eSO-VXduCa15lne1ijKUzoXfVc748wBXjQrRqHRDRDxLS30Uk4nlH5dzOhtj8VJN3EWvJzWFTfcQ4MlnxomOdKbBDW3p5m_YELyne4Yq2eVpvXcKpsjrlFd-aHqHA6D7ODFJhdI7QNIhvJOQG_zpMyQ_X2Iop5dSUNZ9O6HO_ALlbgaKAfgnyLkpUYTz-v8uPkOzj-TvW62ek6IVhYf1I7w4M6M7SMnPKDb02HbkYZYPcyL7JYX-r1EPE.webp?r=ecd">
+                    <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdyBh09lelRVlRBk7KmveAbQ0Cwp3HYtOlVvyb_QFlz2bQS8eKq67A3adEF9S_WbJxtB-C7MYfqsQ0-cluw_1Fy4mgA_SJ6CCdWdXFG_HHbsXuGxGUR181TQMseQ1AYHlBU1bIKMcpZ2kWeNOhApUWVfIikTyfDrgeef3eQB-Velv0n95j7Putci8ukgEdYtsgGs0x37AceyHa6XrVptTY-tu4KTuI6sGkDh8DsL6Qu9A-xJ84xTfzPX4uOeT0SQst9mHz5c48abOtd_sXm0SexR5cURUti6WJSDaVIY5idwgOToJsuToAJBY9ZfiHT43OlEIplKsy5dBSJWyP7-pDOhZRT8GGtuyjk1TQFAlek70YhYCP_536sM5UvO-jJtwQ-ZRwvmnp8pkCukEz7rcHnc5McTRzrp2Rgvw3ZtGK5XaibrqDR48xc0-83A-EmxaMNTGj8q.webp?r=271">
+                    <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdYxot9OePkfu7aNinmuEqHwamughAyyrRbImTN0KN9A8SbtEqA4Buoj54PYx9yRZ3A-f-x-IL1bzxfwYSN_3Gcru6k2KMVmwxnW_lFMwmbKWgSpwKIbwxOEC4vUn-KQfuBE.jpg?r=3f8">
+                    <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZwtojDeeqJJJb7RrB5gys6BBwtDRdQPIEcEcxRu6jpGBGOgJHpzns_3WhmMJGOyvdxXfODn9LUANxUUxtcdmBXihduE3qvzPtA.webp?r=1ce">
+                    <img class="thumbnail" src="https://occ-0-3097-988.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaDGkurVSrpfjeXP__SAMnQZzm2HsbX4QmeS_sZ3jcdFUOlkXK7PGMkdqnqWXxWWYTPzV8A8zf7Q2ZBAGIf3_qRlV-luhyNDCg0.webp?r=09d">
+                    <img class="thumbnail" src="https://occ-0-3097-988.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTkRPr-eL9C56kJxmucWeyZsUPhy2HxlPqxHK8FJN0ulU67rhQYLyLEVwN7mMBxF8slZfI9ZpXygqU7w5rpSCpLlCNyDPvq7ELtPmJ7D-KgWrxAo-aBGYgHS5AikSrB2nFIF.jpg?r=6e2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- only netflix -->
+    <div class="onlyNteflix">
+        <div id="onlyTxt">
+            <h2>넷플릭스 오리지널</h2>
+        </div>
+        <div class="onlyNetflixContents">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYvJWorAJDzKFkZmUxEUmbMrRwkRq_qVJgIGzO3Rg8geh1uAb4s3-3Zt-wk_-AVgIn5OTEmR-1tB3I8TqYxw_hPxmV0u_RdZyk2lMK5gxkMmjPtZzGcbHt_F1VEQ2eJvHVdJ.jpg?r=b4f">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYhGYeiXO6Krc_mw_SDP_bHTfglB3pGvs-SJQkIpdS05H2mxoY2B7blRASbySl19ldJCCt0XK1dHBMDFV-m59cTH47A1bnApwbaIJTDC8-nSPqAkvdJod9dRCjsIcTCgksdG.jpg?r=ff7">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYdqF5gZweovpbobml3mZICs43iNAE5AhjGIKL7Ypr7CyWNrx7LWUwKwPmEuLZfLtx1aNruvpFoki7-4DyZ6UHB57pvxl2ls72CRpbX3V8bkg4myEK1x6Czf3Z0JwwlVjI8k.jpg?r=367">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYqYsDJAj1lXWzcFE3DuLdQosPWjsM1M4FUBIGP7koozlBxsH3t3wByyUlsHsnav3z8hpP6wT6K8PeQ_770GYulcTo3MiygA1uLmIRRddOpeSwj3RTNCH6R4i4oS2OEFcWjn.jpg?r=91f">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRhbciEUbtOdFTWpOaXzRwdnSmshsRzwIoLqyhqC8iqWo3XaM8nxKkVm-0MHkjeixnr7P3oBAyChOq4Pe4AHPL9q1r49TAK3ETn_L5qJmYj5fX6rkjNykAHXyCTdC7idjAPV.jpg?r=79e">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYgkIJOpaoelHiYr9nZ6F-c5L5p5bbKXbzO5ZeXvtPABBa07S546KEFAx7IxZcmRajQzolqBxB7ANalIsRo8-Wbzj98tklz2V3hnDYDiwpfi6lmfUe4116EStRFj-NtF-Ej1.jpg?r=51a">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSEfzQuhVch8ga5NxIUMTN5bwjLA7vHJIxR_YO4U2YwKf3TjWa2P-aw0EevdEQVIttjpYVzxrMxFTL_7a_iv9PNJ-AeE-oOMc2I969eEnOdVmrVDkz2yh1nDygziwSEkRsH3.jpg?r=812">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABV2QFNjBOfOrbxHtyRKW8R7ape64zA4QKpfg0hycez72fByXB4oPXcK2jCrP5HKyD4p4gG-Nq-CPCDpFMouzoXG3L0DW9Aic_393SnWcW8DlF7odkIhEgi2yCoWDFBbQOey1.jpg?r=14d">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSaAzFxexH77a3QkHdpkyfuhmp3-NQLNjP9EfeushhroNRLxsJTJWl99EgTMfcQRuyJRXBoH9kjZ3WzJvg4bMwanjibFMDX5Gj4rhavusvBqZXDY9s6KYvFV56EjrZhUi0Eo.jpg?r=a91">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeaUDnHeve2DyLO-e5WPar3vcw2WiUMxWxE5S2Ja1v_faH9O7xxCuBUHHeRzJDJzaSs4I1x5XweOsNs_hS3qO3dt1_mXrXVqz6maVSkFboABd_TDG96p9OsaUUvE5heA4hbY.jpg?r=85f">
+            <div class="pernexBtn">
+                <button type="button" id="pre"><</button>
+                <button type="button" id="next">></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rewatch -->
+    <div class="rewatch">
+        <div id="rewatchTxt">
+            <h2>다시보기 추천 콘텐츠</h2>
+        </div>
+        <div class="rewatcytContents">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXvwtfGw5YnbLEBfn104pXRwRsz2jemMNQ-XrWnMPCdPIh32HBXhmAIZJvqVlfkFpGbnrKVpGVV0BcjmP37oqlIpxEyhbXPB9Ro.webp?r=64a">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWZXDUUYxZ64WfdwetBRyJDpgJ4AyQxQCkuzEPe6HLXaxrldsFukCI5ZXB8iNT8-L0H2ytW21-j_oY7UFYdaql0L5NHmuimiisT9OjnuL4DjwZuPgbpnoruZsE3KcUHvmpnT.jpg?r=d86">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeS7I2z9PYvrSPceC2wXPxjCd6wbzvcBc6mF16kjm09Hn6toIB8xbrYFh_ID1VjG4eTUoJtEwIlkCNOtySQkpAeBfWzFd5BoN1PX6mK37VJGWhIxYuRNnsdqsociWf9QCyQ_.jpg?r=8a8">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSTAQefUW_SKOT-L1ziSuYSeYxBR-q56zpFeC5wuydRaReMpszNn9RUi8giEbONyNDsdihj-htj8lq4_IcSnFxxDTtf5tXrX-BFJ4veyBVrr7Loq_n8wssFnLemazUDABN0P.jpg?r=f2e">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQnffRIDOdeuMj59gFO7WLMwsngw0GoFL8mYOaNPHXYtD6dgLzDOqrHyHH-JILcvSqf5TKysuHtHYV87KsCKe5h5kRIF-2VeajbZ8bIeG1gUOYSNT1EoAeyeHsTpRhCBewPW.jpg?r=8af">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYwBh6vIYmpo8jzT7sGCSGxfgxMPj6oEfOHCDBvzXa3XLzTph3OVjZOjKYu9jMDCh3rmjYvrTMP7zXZWEO8JRUhv8rmuCC1rcXPyDk6OJiV9uklp4F8erhteRPgBGrwqIgs6.jpg?r=615">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWEeHc4b8yIkoT64ue9Gb4BhDy9_gZ9fjPOdcfz1k49IaVHlTTmvzx51t9vXPUL6x6XW48P3JbuZyTUc2BXDn3XZakVU1EmoMpvvZSBlV2plgN4QUkcJIDmCkd6PDJloCcFh.jpg?r=f4f">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfc1h8GN4GU2n01hiBLJk5ryThWKbG7Sz9kiQEGUgwijW8tvEvSvp1SaRgHc8366GI-tKhA3XUhf1eTVk_q2G0NCA4-gFUsXyelAqVc7BXAS1y8pXSLRUxKq0cQ3WN1XwzAv.jpg?r=fc1">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcPw6OHwx__9I4nkynx9fLQ_57TCURDfG-f1vtK1Aff_MSchn0yQ-7TrJT8_A7IXbfcre7dJ_tiDQ65RlUo-XXa6mfA6WZHS2_w5GpJnWRZ9Mj3NyGxpfIpYT7Vl5tZ7EiYL.jpg?r=eb2">
+            <div class="pernexBtn">
+                <button type="button" id="pre"><</button>
+                <button type="button" id="next">></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- genre - Thriller -->
+    <div class="genThriller">
+        <div id="thrTxt">
+            <h2>스릴러</h2>
+        </div>
+        <div class="thrillerContents">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVRvr-0fewBm7LdLFM4u75z8ScEe5wTOiim60uFjys6DpW0bbj46HlHz619Xjx7PFkzNKr03Mjsk3YNkXqlcPlImUDy4oW_shBY.webp?r=67c">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeJvDkcw0-PmSeDgJHQCHkqulTZ7uZXH-bHlR1rT6fEEFbth3D5z3fHLlAaF_qLYcVZR4YhDXIWYFCWRqLPgezEkfMdQ3Duuztc.webp?r=c2d">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRy779a2y2a67m_eOHJoyGgeqmxtOmRTqH-ARPRyXET_n8OOwf937EPE2dhW5nfVkVUnW428znVGzZcr43W9Wxhdf0jE5-j4t5U.webp?r=108">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW3opcKGHHdwtQ21VMTEkyysBDJnA5vXovmKtuD5c7hEyUYo_EenvQjQTP_RvzO9B1AoZdepbeOK6Ey0SpEkXoXoI4PZN_mPI30.webp?r=8a7">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZCsKSTfG_ZwMQjYBQ3pzaVyao7JElN28tonEzs6DaAPLwxQSz8jCleg_bwQUv7FJy7-KwSsLGjh8xE0YqSl1LRhXh3nSUMtDNc.webp?r=813">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABef9nI3W-94wqMyV2MHxWwHLK5uUYth9yGxvHQLwP6_hMXTTjI92MEz16AxTar40-0uSNIp3Qp4KacMfH_CWDbPbQ4CTFMBBk1U.webp?r=720">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfGW8yjprKNw-CiN6sggeSj1cHbFfRmJbuWe-k5ZaSJQkixMqEPvzwm3Vy01nrO0TKytXPF1Yi9ylgnewOtWmsvoluLQWBzdQUk.webp?r=8d0">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUQtjJ1ukHFyrg_tH5GsrJp_92FwO3FzNYhQhVHUcSI0JeY3fslPbzq_gE_tuCTpQM-gsWR8Ue_nvNV9hmDIdo9KhzYJi_mPAz2evaxhRCjcGBGRWo8hgNqFOyRdw1IphUjE.jpg?r=739">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABefdeFWZ2je5I7vKnImQlFBJQfi75k_TVSOkyWtrrcIYPuKVk1x5dSQPFaTdmOBxr5R0ZWpj_DN8HkZIpeNyguWAxX-Bm3x0sDj2uZISNgGWlg5XzNYToU2p37PC5m4gmxo2.jpg?r=f6b">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABesYIA0MeIXUdMFq1smL9kUcGPH6IVwlcqb6jDDpFdhVqSPwqb9iSM1YGPE7eN0U5i6ougeUWdxwFWMw2ia0ALj7Suzw0mYlUh8.webp?r=c5a"> 
+            <div class="pernexBtn">
+                <button type="button" id="pre"><</button>
+                <button type="button" id="next">></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- genre - war -->
+    <div class="genWar">
+        <div id="warTxt">
+            <h2>전쟁</h2>
+        </div>
+        <div class="warContents">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQHTh2B1i5qPfTUOeMwYXXA0xP_mIzf-nAV8TCfoOvh3Cv4OUgkt2651OfvQUqnmyDCyJp-SFJIgfP6T_evNBNkqPQGU6nLlhLSIrBA73-ckxhcR-UJPpDepP_aG2BOMgjlH.jpg?r=3af">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY_HKIZHJyEKiVGJkGDqHZXhmK_5MBGbCEAJFK6qYW7yxWc3Tmft96qhNsQ0Go77VoAENMicFgRUmk08TtnrXVV74l4MTrj_XXE.webp?r=01d">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdWp3KhMxTOfcDZIhPDOqCdAxIoYVquEdyV4MiuA2Tz6J3ZKqNXdhwidTRsvhByFbaJujn0HKdEAImoPL4hstZf8566ksMwgEpM.webp?r=3dd">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd7-pogVQjbBg7isAC5ZWmrDAJQZggY0jVmQMs4LovhmKSTYnaOiJj5a-BvobhNyw17BarnWH7UvR83MyxCXDEpWLIj792A8WZw.webp?r=b41">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfSjxyG8BQ6lHOPU19OFOPI0ZaMe36bKmx5TRNHS8aMZctOr4UCEiC_rVT-7w_TunLdpuqqgK365yqfpmnYChd9umb_SoxM5M_g.webp?r=ce4">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfFWIsht2DI0iwH_YPjF7flozWem1Re09_EG6M6lIvW-Zs8a4iHqSS-DepKaaoRFkdi6MRFLqoNJeGemjCol7zADwaQcwmNHB9EIzFehLgIjAzwaVTFTpdgj7zzaulNMSB_U.jpg?r=797">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVRJCLHyY17-ugphPWMRbraB5F0GTFmU2T8JLWSpXW8iK1bFlWxmysu2sz31zrDIKe19XW6A_mXUG9kjGTY8bqAglcgS5OZLkZc.webp?r=476">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW6Zdgy510Gy8vcXffKDV-MvpmxSGsjxSRWFJSiWfwqhLW0vuT0AvEUbaNtmX-RkQDa_3gjKgM9R-K-3omVnNBQVtvOtfAw7ix0.webp?r=938">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVeMlUfBxlWO5YV5ewQeKYtu-W4TTRvfEEjVri_ofy7RwldAldZvix2N61afYr6Tjp6gFTVzs8XyKG53w9_GW1jktfvn5T6bFc1_zAjgtRTmwKFuU11jz4cnUKhYn15Ao9ye.jpg?r=ac1">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd8JKO8_wSC23nsXd1ar3qNy8AfqQwDGKdlaMrf6e03bhh1I9xQCOiINyzRUC6TBgZ53V0Z_Y6-qWu4ElYKBapNesL5GsFHuWhE.webp?r=bdb">
+            <div class="pernexBtn">
+                <button type="button" id="pre"><</button>
+                <button type="button" id="next">></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- genre - animation -->
+    <div class="genAni">
+        <div id="aniTxt">
+            <h2>애니메이션</h2>
+        </div>
+        <div class="aniContents">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbXgQ3Yd1LPeK3sbBXTnu2VDszVsABGvZXkCuDB_alPzo8XuCRR9VCSKJu9hf01CmRtuYK5yi4RdnCYfypqal2p99SJDzUZbGaM.webp?r=743">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcLv5R62IGD52WkeXnVOQfPwsXWwglnkf0M9erUh65iF5z8D1B4tlA6p_JcgVNCiOhN0_weNrrvmY20066DM5W4R7MVgBfh8K_8.webp?r=d78">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXlQ9GC6mKXMyzGvdaUsJfsr6_-n1-PWzfM8HSGIW0CMB85pyq1ZXTGVWEeWJ4DTbeRSIpqwQl16PQj1EpYepO1CZzORuNqoaWI.webp?r=87b">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdLXzQ3Dqtt4IJoJ8yNbjMxP7k9_QZLb35hzN-yDjkt6g4x0z-YEFaU1gXBJVMi6g9JoA58Kyiqm5YRkFLXBkMJU8L8KuVPQNCQ.webp?r=161">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTQhoCl7WSQJhwfn54MYeuSPShq09zAxeiwa7NZtht5GssVTFFQqPdKVQ9wcPNTXi_IldVfUo7OpXzhvCf1fgUb53uS7FpxgMcc.webp?r=4e1">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTGLv3-m9Hx53QspLM6hrzlxJ2iBGneiHgci4Lp6aou7VLk178jhDJP8M2_e54F-IeTzVaLJ_FxW120z9W4it0jGihhiDhS_CTY.webp?r=602">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR_lReLYffCf8gr13_GWuUET1KV3T6DXLDH1J3pW4qwnziUe5byOL8B-yZplVFA6E8AmRp-mPXx-maUvh8KvpJvpB2KvKMuUfkU.webp?r=190">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX4QjJmO4yDhHVvrvA93K5pol4Wzy5NwcM9LvO0aSRlRpqDCIHr0pbRLl6IShD-fFMimmUd1dow_XE8w9qiYtWIaRsZSrEY9cTcdBv-YDCSIlr8NEfGkTF8V0Evq-wCShA3R.jpg?r=bdf">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeCOizii3pdkuDXGjdX7O_wn8vieDLpW9FxDRuRNweHVjiQcpI6veN0s0503XkWwj2kINDnmvk2qg_mf_NQNYPKquJZd-J-P_TED9HPaHswR2Pkp_jg4ByWU3Vu2z0MwdLhG.jpg?r=c8c">
+            <img class="thumbnail" src="https://occ-0-325-1360.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYKhWRFjemVqTM8bc7d4tJj7d22b9aycvnIRaMdRgbtCh32EcYxhCkMafI3H7V-ICXMztsANkPruVU7Hc_P1idw5afi5XSpRL3c.webp?r=495">
+            <div class="pernexBtn">
+                <button type="button" id="pre"><</button>
+                <button type="button" id="next">></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="sns">
+            <a href="https://www.facebook.com/NetflixKR" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="facebook" class="snsItem" width="24" height="24">
+                    <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/netflixkr/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="instagram" class="snsItem" width="24" height="24">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/netflixkr" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="twitter" class="snsItem" width="24" height="24">
+                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCiEEF51uRAeZeCo8CJFhGWw/featured" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" id="youtube" class="snsItem" width="24" height="24">
+                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+                </svg>
+            </a>
+            </div>
+            <div class="guideBox">
+                <ul class="guide">
+                    <li><a href="#">화면 해설</a></li>
+                    <li><a href="#">고객 센터</a></li>
+                    <li><a href="#">기프트 카드</a></li>
+                    <li><a href="#">미디어 센터</a></li>
+                    <li><a href="#">투자 정보(IR)</a></li>
+                    <li><a href="#">입사 정보</a></li>
+                    <li><a href="#">이용 약관</a></li>
+                    <li><a href="#">개인 정보</a></li>
+                    <li><a href="#">법적 고지</a></li>
+                    <li><a href="#">쿠키 설정</a></li>
+                    <li><a href="#">회사 정보</a></li>
+                    <li><a href="#">문의하기</a></li>
+                </ul>
+            </div>
+    </footer>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

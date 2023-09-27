@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.header_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    z-index: 1;
+}
+
+.mainPart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+#logo {
+    width: 7rem;
+    fill: red;
+    margin: 1rem 1rem;
+}
+
+.mainPart li {
+    display: inline-block;
+}
+
+.subPart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    margin: 1rem 1rem;
+}
+
+.subPart svg {
+    margin-left: 1.5rem;
+}
+
+#search, #bell, #profile {
+    fill: white;
+    width: 1rem;
+}

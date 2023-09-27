@@ -1,0 +1,27 @@
+#warTxt {
+    margin-bottom: 1rem;
+}
+
+#warTxt h2 {
+    color: white;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.genWar img {
+    width: 220px;
+    height: 125px;
+    object-fit: cover;
+    margin-left: 1rem;
+}
+
+.warContents {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(auto, 1fr));
+    gap: 1rem;
+}
+
+.warContents img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}

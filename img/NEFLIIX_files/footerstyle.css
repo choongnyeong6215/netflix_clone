@@ -1,0 +1,15 @@
+.sns {
+    margin: 5rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    fill: white;
+    margin-right: 3rem;
+}
+
+.snsItem {
+    flex-basis: 1rem;
+}

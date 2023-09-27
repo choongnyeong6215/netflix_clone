@@ -1,0 +1,99 @@
+body {
+    overflow-x: hidden;
+}
+
+.funTv, .free, .kids, .offline {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.funTxt, .freeTxt, .kidsTxt, .offlineTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+
+.borderLine {
+    background-color: rgb(35,35,35);
+    opacity: 0.8;
+    width: 100%;
+    height: 0.5rem;
+}
+
+.faqTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.faqList {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.plus {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+} 
+
+.perfaq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c3c3c;
+    opacity: 0.8;
+    padding: 1.5rem;
+}
+
+.perfaq:hover {
+    background-color: #3c3c3c;
+    opacity: 1;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+.ansList {
+    background-color: #3c3c3c;
+    opacity: 0.8;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    padding : 0 1rem;
+    transition: all 0.5s;
+}
+
+.active {
+    max-height: 200px;
+    padding : 1rem;
+}

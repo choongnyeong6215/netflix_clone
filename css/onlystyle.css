@@ -1,0 +1,54 @@
+#onlyTxt {
+    margin-bottom: 1rem;
+}
+
+#onlyTxt h2 {
+    color: white;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.onlyNetflixContents img {
+    width: 220px;
+    height: 125px;
+    object-fit: cover;
+    margin-left: 1rem;
+}
+
+.onlyNetflixContents {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(auto, 1fr));
+    gap: 1rem;
+    position: relative;
+}
+
+.onlyNetflixContents img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+#pre, #next {
+    border: none;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-size: 2rem;
+    height: 125px;
+    padding: 0 0.5rem;
+}
+
+#pre {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#next {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hidden {
+    display: none;
+}
