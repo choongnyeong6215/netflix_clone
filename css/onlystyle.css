@@ -1,4 +1,4 @@
-#onlyTxt {
+/* #onlyTxt {
     margin-bottom: 1rem;
 }
 
@@ -51,4 +51,75 @@
 
 .hidden {
     display: none;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.slide-container {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    width: 100vw;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.thumbnail {
+    width: 225px;
+    height: 125px;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.slide-txt {
+    color: white;
+}
+
+#preBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: none;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    
+}
+
+#nextBtn {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    height: 100%;
+    border: none;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
 }

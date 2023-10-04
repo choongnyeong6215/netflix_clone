@@ -51,6 +51,16 @@ body {
     height: 100%;
 }
 
+.promotionTxt1 {
+    flex-shrink: 1;
+}
+.promotionTxt2 {
+    flex-shrink: 1;
+}
+.promotionTxt3 {
+    flex-shrink: 1;
+}
+
 .promotion {
     width: 100%;
     height: 700px;
@@ -92,4 +102,29 @@ p {
     color: white;
     font-size: 1rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .promotionTxt1 h1{
+        font-size: 2.5rem;
+    }
+    .promotionTxt2 p{
+        font-size: 1rem
+    }
+    .promotionTxt3 p{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 576) {
+    .promotionTxt1 h1{
+        font-size: 2rem;
+    }
+    .promotionTxt2 p{
+        font-size: 0.5rem
+    }
+    .promotionTxt3 p{
+        font-size: 0.5rem;
+    }
 }

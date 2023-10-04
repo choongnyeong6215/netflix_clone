@@ -28,7 +28,6 @@ for(let i = 0; i < perfaqs.length; i++) {
 const headerContainer = document.getElementsByClassName('header_container')[0];
 let preScroll = 0;
 
-console.log(headerContainer);
 
 window.addEventListener('scroll', () => {
     let curScroll = document.documentElement.scrollTop;

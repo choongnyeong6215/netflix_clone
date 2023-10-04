@@ -1,11 +1,7 @@
-body {
-    overflow-x: hidden;
-}
-
 .funTv, .free, .kids, .offline {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 85%;
     margin: 5rem auto;
 }
 
@@ -16,14 +12,20 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
 p {
     font-size: 1.5rem;
     font-weight: 400;
+    margin-top: 0.5rem;
+    text-align: center;
 }
 
 ul {
@@ -62,7 +64,6 @@ li {
     background-color: transparent;
     font-size: 1.5rem;
     color: white;
-    cursor: pointer;
 } 
 
 .perfaq {
@@ -72,15 +73,12 @@ li {
     background-color: #3c3c3c;
     opacity: 0.8;
     padding: 1.5rem;
+    cursor: pointer;
 }
 
 .perfaq:hover {
     background-color: #3c3c3c;
     opacity: 1;
-}
-
-span {
-    font-size: 1.5rem;
 }
 
 .ansList {
@@ -89,11 +87,146 @@ span {
     border-top: 1px solid black;
     max-height: 0;
     overflow: hidden;
-    padding : 0 1rem;
+    padding : 0 1.5rem;
     transition: all 0.5s;
+}
+
+.ansList span {
+    font-size: 1.3rem;
+}
+
+.perfaq span {
+    font-size: 1.3rem;
 }
 
 .active {
     max-height: 200px;
     padding : 1rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .funTv {
+        display: flex;
+        flex-direction: column;
+    }
+    .funImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .free {
+        display: flex;
+        flex-direction: column;
+    }
+    .freeImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .kids {
+        display: flex;
+        flex-direction: column;
+    }
+    .kidsImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .offline {
+        display: flex;
+        flex-direction: column;
+    }
+    .offlineImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promotionTxt1 h1 {
+        font-size: 2rem;
+    }
+    .funTxt h2{
+        font-size: 2rem;
+    }
+    .funTxt p{
+        margin-top: 0.5rem;
+        font-size: 1rem
+    }
+    .freeTxt h2{
+        font-size: 2rem;
+    }
+    .freeTxt p{
+        margin-top: 0.5rem;
+        font-size: 1rem
+    }
+    .kidsTxt h2{
+        font-size: 2rem;
+    }
+    .kidsTxt p{
+        margin-top: 0.5rem;
+        font-size: 1rem
+    }
+    .offlineTxt h2{
+        font-size: 2rem;
+    }
+    .offlineTxt p{
+        margin-top: 0.5rem;
+        font-size: 1rem
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .promotionTxt1 h1 {
+        font-size: 1.5rem;
+    }
+    .funTxt h2{
+        font-size: 1rem;
+    }
+    .funTxt p{
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+    }
+    .freeTxt h2{
+        font-size: 1rem;
+    }
+    .freeTxt p{
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+    }
+    .kidsTxt h2{
+        font-size: 1rem;
+    }
+    .kidsTxt p{
+        margin-top: 0.5rem;
+        font-size: 0.5rem
+    }
+    .offlineTxt h2{
+        font-size: 1rem;
+    }
+    .offlineTxt p{
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ansList span {
+        font-size: 1rem;
+    }
+    
+    .perfaq span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ansList span {
+        font-size: 0.5rem;
+    }
+    
+    .perfaq span {
+        font-size: 0.5rem;
+    }
 }

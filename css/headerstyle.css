@@ -30,19 +30,22 @@ a {
 
 .mainPart {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    width: 30%;
+    width: 40rem;
 }
 
 #logo {
     width: 7rem;
     fill: red;
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .mainPart li {
     display: inline-block;
+    flex-basis: 1;
+    flex-grow: 1;
 }
 
 .subPart {
