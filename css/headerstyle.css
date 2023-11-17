@@ -8,59 +8,100 @@ body {
     background-color: black;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    color: #e5e5e5;
-    text-decoration: none;
-    font-size: 0.7rem;
-}
-
 .header_container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
     display: flex;
-    z-index: 1;
+    padding: 1rem;
+}
+
+.logoPart {
+    margin: 0 1rem;
 }
 
 .mainPart {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 40rem;
+    padding: 1rem;
+    flex: 1;
+}
+
+.resPart {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+.header_container ul {
+    list-style: none;
+}
+
+a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
 }
 
 #logo {
-    width: 7rem;
+    width: 10rem;
     fill: red;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
-.mainPart li {
-    display: inline-block;
-    flex-basis: 1;
-    flex-grow: 1;
+#resBar {
+    width: 1.5rem;
+    display: none;
 }
 
-.subPart {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 70%;
-    margin: 1rem 1rem;
+#search {
+    width: 1.5rem;
 }
 
-.subPart svg {
-    margin-left: 1.5rem;
+.hidden {
+    display: none;
 }
 
-#search, #bell, #profile {
-    fill: white;
-    width: 1rem;
+.resMenuPart p {
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid gray;
+}
+
+@media screen and (max-width: 1400px) {
+    .mainPart a {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        width: 8rem;
+    }
+    .mainPart a {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #logo {
+        width: 6rem;
+    }
+    #resBar {
+        display: block;
+    }
+    .mainPart {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainPart li {
+        padding: 0.5rem;
+    }
+    .header_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resPart {
+        padding: 1rem;
+    }
 }

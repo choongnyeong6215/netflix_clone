@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/headerstyle.css">
+    <link rel="stylesheet" href="./css/posterstyle.css">
+    <link rel="stylesheet" href="./css/onlystyle.css">
+    <link rel="stylesheet" href="./css/footerstyle.css">
+    <link rel="stylesheet" href="./css/modalstyle.css">
+    <link rel="stylesheet" href="./css/slidestyle.css">
+    <title>NETFLIX</title>
+</head>
+<body>
+    
+
+    <!-- contents modal -->
+        <div class="overlay hidden">
+            <div class="modal hidden">
+                <div class="thumbnailContainer">
+                    <button class="closeModalBtn">X</button>
+                    <img class="modalImg">
+                </div>
+                <div class="thumnailInfo">
+                    <div class="titlePart">
+                        <h2 id="modalTitle">제목</h2>
+                    </div>
+                    <div class="extInfoPart">
+                        <p id="modalContents">컨텐츠 구분</p>
+                        <p id="modalReldate">개봉일</p>
+                        <p id="modalVote">평점</p>
+                    </div>
+                    <div class="overviewPart">
+                        <p id="modalOverview">줄거리</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <header class="header_container">
+        <div class="logoPart">
+            <a href="#">
+                <svg viewBox="0 0 111 30" data-uia="netflix-logo" class="svg-icon svg-icon-netflix-logo" aria-hidden="true" focusable="false" id="logo">
+                    <path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14"></path>
+                </svg>
+            </a>
+        </div>
+        <ul class="mainPart">
+            <li class="mainPartLists"><a href="#">홈</a></li>
+            <li class="mainPartLists"><a href="#">시리즈</a></li>
+            <li class="mainPartLists"><a href="#">영화</a></li>
+            <li class="mainPartLists"><a href="#">NEW! 요즘 대세 콘텐츠</a></li>
+        </ul>
+        <div class="resPart">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" id="resBar">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </div>
+        <div class="searchLoc">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="search">
+                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+            </svg>
+        </div>
+    </header>
+
+    <div class="resMenuPart hidden">
+        <p class="resMenuLists"></p>
+        <p class="resMenuLists"></p>
+        <p class="resMenuLists"></p>
+        <p class="resMenuLists"></p>
+    </div>
+
+
+    <!-- search sidebar -->
+    <div class="overlay hidden"></div>
+    <nav class="searchSideBar">
+        <div class="searchTitle">
+            <h2>검색</h2>
+            <button class="closeSearchModal">X</button>
+        </div>
+        <div class="searchPart">
+            <input type="search" id="search_form" placeholder="영화 제목을 검색하세요">
+        </div>
+        <div class="borderLine"></div>
+        <div class="searchResults">
+            <h2>시청 가능한 컨텐츠</h2>
+        </div>
+    </nav>
+    
+
+    <!-- main poster -->
+    <section>
+        <div class="mainPosterImg">
+            <img src="./img/1.png" class="MainThumbnail"> 
+            <img src="./img/2.png" class="MainThumbnail">
+            <img src="./img/3.png" class="MainThumbnail"> 
+            <img src="./img/4.png" class="MainThumbnail">
+            <img src="./img/5.png" class="MainThumbnail">
+            <img src="./img/6.png" class="MainThumbnail">
+            <img src="./img/7.png" class="MainThumbnail">
+            <img src="./img/8.png" class="MainThumbnail">
+            <img src="./img/9.png" class="MainThumbnail">
+            <img src="./img/10.png" class="MainThumbnail">
+        </div>
+    </section>
+ 
+
+    <!-- tmdb data - popular -->
+    <div class="slide_container">
+        <h2 class="popularTxt">인기 컨텐츠</h2>
+        <div class="slide_part">
+            <div class="btn-group">
+                <button id="prev" class="pbt1 hidden">&lang;</button>
+                <button id="next" class="nbt1">&rang;</button>
+            </div>  
+            <div class="slide popular">
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="firLine" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- tmdb data - tv  -->
+    <div class="slide_container">
+        <h2 class="tvContentsTxt">TV 컨텐츠</h2>
+        <div class="slide_part">
+            <div class="btn-group">
+                <button id="prev" class="pbt2 hidden">&lang;</button>
+                <button id="next" class="nbt2">&rang;</button>
+            </div>  
+            <div class="slide tv">
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="secLine" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- tmdb data - currrent_movie -->
+    <div class="slide_container">
+        <h2 class="tvContentsTxt">현재 상영중인 영화</h2>
+        <div class="slide_part">
+            <div class="btn-group">
+                <button id="prev" class="pbt3 hidden">&lang;</button>
+                <button id="next" class="nbt3">&rang;</button>
+            </div>  
+            <div class="slide curr">
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div> 
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="thrLine" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- tmdb data - comming_soon -->
+    <div class="slide_container">
+        <h2 class="tvContentsTxt">개봉 예정</h2>
+        <div class="slide_part">
+            <div class="btn-group">
+                <button id="prev" class="pbt4 hidden">&lang;</button>
+                <button id="next" class="nbt4">&rang;</button>
+            </div>  
+            <div class="slide comming">
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+                <div>
+                    <img src="" class="fourLine" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="sns">
+            <a href="https://www.facebook.com/NetflixKR" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="facebook" class="snsItem">
+                    <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/netflixkr/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="instagram" class="snsItem" width="24" height="24">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/netflixkr" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="twitter" class="snsItem" width="24" height="24">
+                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCiEEF51uRAeZeCo8CJFhGWw/featured" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" id="youtube" class="snsItem" width="24" height="24">
+                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="guideBox">
+            <ul class="guide">
+                <li><a href="#">화면 해설</a></li>
+                <li><a href="#">고객 센터</a></li>
+                <li><a href="#">기프트 카드</a></li>
+                <li><a href="#">미디어 센터</a></li>
+                <li><a href="#">투자 정보(IR)</a></li>
+                <li><a href="#">입사 정보</a></li>
+                <li><a href="#">이용 약관</a></li>
+                <li><a href="#">개인 정보</a></li>
+                <li><a href="#">법적 고지</a></li>
+                <li><a href="#">쿠키 설정</a></li>
+                <li><a href="#">회사 정보</a></li>
+                <li><a href="#">문의하기</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="./js/app.js"></script>
+    <script src="./js/tmdb.js"></script>
+</body>
+</html>

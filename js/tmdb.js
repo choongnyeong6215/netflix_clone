@@ -4,7 +4,6 @@ const secLine = document.getElementsByClassName('secLine');
 const thrLine = document.getElementsByClassName('thrLine');
 const fourLine = document.getElementsByClassName('fourLine');
 
-
 // tmdb data - popular
 const options1 = {
     method: 'GET',
@@ -41,9 +40,24 @@ const options1 = {
 
           firLine[i].src = `https://image.tmdb.org/t/p/w500/${movieImg}`;
 
+          // 스크롤 위치 별로 모달창 표시
+          // let tPos1;
+
+          // window.addEventListener('scroll', () => {
+          //   tPos1 = document.documentElement.scrollTop;
+
+          //   console.log(tPos1);
+          // })
+
+          // 포스터 모달창
           firLine[i].addEventListener('click', (e) => {
+
+            let y = e.offsetY;
+
             modal.classList.remove('hidden');
             overlay.classList.remove('hidden');
+
+            // modal.style.transform = `translate(-50%, ${tPos1 + (y / 2)}px)`;
 
             modalImg.src = firLine[i].src;
             modalTitle.innerHTML = movieTitle;
@@ -53,9 +67,8 @@ const options1 = {
             modalVote.innerHTML = `평점 : ${movieGrade}`;
           })
 
-
           // popular contents 제목 검색
-          const searchRes = document.querySelector('.searchRes');
+          const searchResults = document.querySelector('.searchResults');
           const searchForm = document.getElementById('search_form');
           const searchResListsNames = movieTitle.toLowerCase();
           const searchResTxt = document.createElement('p');
@@ -63,11 +76,9 @@ const options1 = {
           searchForm.addEventListener('keyup', (e) => {
             const keyword = e.target.value;
 
-            console.log(`제목 : ${searchResListsNames}, ${searchResListsNames.indexOf(keyword)}`);
-
             if(searchResListsNames.indexOf(keyword) > -1 && keyword !== '') {
               searchResTxt.innerHTML = searchResListsNames;
-              searchRes.appendChild(searchResTxt);
+              searchResults.appendChild(searchResTxt);
             }
             else {
               searchResTxt.remove();
@@ -81,8 +92,8 @@ const options1 = {
           const slideCnt1 = slideList1.length;
           const prevBtn1 = document.querySelector('.pbt1');
           const nextBtn1 = document.querySelector('.nbt1');
-          const slideWidth1 = 270;
-          const slideMargin1 = 8;
+          const slideWidth1 = 300;
+          const slideMargin1 = 64;
           let curIdx1 = 0;
 
           slide1.style.width = (slideWidth1 + slideMargin1) * slideCnt1 + 'px';
@@ -95,7 +106,7 @@ const options1 = {
               prevBtn1.classList.add('hidden');
             }
 
-            else if (-num * 500 <= -1500) {
+            else if (-num * 500 <= -2000) {
               nextBtn1.classList.add('hidden');
             }
             else {
@@ -116,7 +127,6 @@ const options1 = {
 
           nextBtn1.addEventListener('click', () => {
 
-            console.log(slide1.style.left);
             if(curIdx1 !== slideCnt1 - 1) {
               moveSlide(curIdx1 + 1);
               slide1.classList.add('moved');
@@ -162,9 +172,22 @@ const options2 = {
 
           secLine[i].src = `https://image.tmdb.org/t/p/w500/${movieImg}`;
 
+          // 스크롤 위치 별로 모달창 표시
+          // let tPos2;
+
+          // window.addEventListener('scroll', () => {
+          //   tPos2 = document.documentElement.scrollTop;
+          // })
+
+          // 포스터 모달창
           secLine[i].addEventListener('click', (e) => {
+
+            // let y = e.offsetY;
+
             modal.classList.remove('hidden');
             overlay.classList.remove('hidden');
+
+            // modal.style.transform = `translate(-50%, ${tPos2 + (y / 2)}px)`;
 
             modalImg.src = secLine[i].src;
             modalTitle.innerHTML = movieTitle;
@@ -175,7 +198,7 @@ const options2 = {
           })
 
           // tv contents 제목 검색
-          const searchRes = document.querySelector('.searchRes');
+          const searchResults = document.querySelector('.searchResults');
           const searchForm = document.getElementById('search_form');
           const searchResListsNames = movieTitle.toLowerCase();
           const searchResTxt = document.createElement('p');
@@ -187,7 +210,7 @@ const options2 = {
 
             if(searchResListsNames.indexOf(keyword) > -1 && keyword !== '') {
               searchResTxt.innerHTML = searchResListsNames;
-              searchRes.appendChild(searchResTxt);
+              searchResults.appendChild(searchResTxt);
             }
             else {
               searchResTxt.remove();
@@ -200,8 +223,8 @@ const options2 = {
           const slideCnt2 = slideList2.length;
           const prevBtn2 = document.querySelector('.pbt2');
           const nextBtn2 = document.querySelector('.nbt2');
-          const slideWidth2 = 270;
-          const slideMargin2 = 8;
+          const slideWidth2 = 400;
+          const slideMargin2 = 64;
           let curIdx2 = 0;
 
           slide2.style.width = (slideWidth2 + slideMargin2) * slideCnt2 + 'px';
@@ -214,7 +237,7 @@ const options2 = {
               prevBtn2.classList.add('hidden');
             }
 
-            else if (-num * 500 <= -1500) {
+            else if (-num * 500 <= -2000) {
               nextBtn2.classList.add('hidden');
             }
             else {
@@ -277,9 +300,22 @@ const options3 = {
 
       thrLine[i].src = `https://image.tmdb.org/t/p/w500/${movieImg}`;
 
+      // 스크롤 위치 별로 모달창 표시
+      // let tPos3;
+
+      // window.addEventListener('scroll', () => {
+      //   tPos3 = document.documentElement.scrollTop;
+      // })
+
+      // 포스터 모달창
       thrLine[i].addEventListener('click', (e) => {
+
+        // let y = e.offsetY;
+
         modal.classList.remove('hidden');
         overlay.classList.remove('hidden');
+
+        // modal.style.transform = `translate(-50%, ${tPos3 + (y / 2)}px)`;
 
         modalImg.src = thrLine[i].src;
         modalTitle.innerHTML = movieTitle;
@@ -291,7 +327,7 @@ const options3 = {
 
 
       // current_movie contents 제목 검색
-      const searchRes = document.querySelector('.searchRes');
+      const searchResults = document.querySelector('.searchResults');
       const searchForm = document.getElementById('search_form');
       const searchResListsNames = movieTitle.toLowerCase();
       const searchResTxt = document.createElement('p');
@@ -303,7 +339,7 @@ const options3 = {
 
         if(searchResListsNames.indexOf(keyword) > -1 && keyword !== '') {
           searchResTxt.innerHTML = searchResListsNames;
-          searchRes.appendChild(searchResTxt);
+          searchResults.appendChild(searchResTxt);
         }
         else {
           searchResTxt.remove();
@@ -317,8 +353,8 @@ const options3 = {
       const slideCnt3 = slideList3.length;
       const prevBtn3 = document.querySelector('.pbt3');
       const nextBtn3 = document.querySelector('.nbt3');
-      const slideWidth3 = 270;
-      const slideMargin3 = 8;
+      const slideWidth3 = 400;
+      const slideMargin3 = 64;
       let curIdx3 = 0;
 
       slide3.style.width = (slideWidth3 + slideMargin3) * slideCnt3 + 'px';
@@ -331,7 +367,7 @@ const options3 = {
               prevBtn3.classList.add('hidden');
             }
 
-            else if (-num * 500 <= -1500) {
+            else if (-num * 500 <= -2000) {
               nextBtn3.classList.add('hidden');
             }
             else {
@@ -395,9 +431,22 @@ const options4 = {
 
       fourLine[i].src = `https://image.tmdb.org/t/p/w500/${movieImg}`;
 
+      // 스크롤 위치 별로 모달창 표시
+      // let tPos4;
+
+      // window.addEventListener('scroll', () => {
+      //   tPos4 = document.documentElement.scrollTop;
+      // })
+
+      // 포스터 모달창
       fourLine[i].addEventListener('click', (e) => {
+
+        // let y = e.offsetY;
+
         modal.classList.remove('hidden');
         overlay.classList.remove('hidden');
+
+        // modal.style.transform = `translate(-50%, ${tPos4 + (y / 2)}px)`;
 
         modalImg.src = fourLine[i].src;
         modalTitle.innerHTML = movieTitle;
@@ -408,7 +457,7 @@ const options4 = {
       })
 
       // comming_soon contents 제목 검색
-      const searchRes = document.querySelector('.searchRes');
+      const searchResults = document.querySelector('.searchResults');
       const searchForm = document.getElementById('search_form');
       const searchResListsNames = movieTitle.toLowerCase();
       const searchResTxt = document.createElement('p');
@@ -420,7 +469,7 @@ const options4 = {
 
         if(searchResListsNames.indexOf(keyword) > -1 && keyword !== '') {
           searchResTxt.innerHTML = searchResListsNames;
-          searchRes.appendChild(searchResTxt);
+          searchResults.appendChild(searchResTxt);
         }
         else {
           searchResTxt.remove();
@@ -434,8 +483,8 @@ const options4 = {
       const slideCnt4 = slideList4.length;
       const prevBtn4 = document.querySelector('.pbt4');
       const nextBtn4 = document.querySelector('.nbt4');
-      const slideWidth4 = 270;
-      const slideMargin4 = 8;
+      const slideWidth4 = 400;
+      const slideMargin4 = 64;
       let curIdx4 = 0;
 
       slide4.style.width = (slideWidth4 + slideMargin4) * slideCnt4 + 'px';
@@ -448,7 +497,7 @@ const options4 = {
               prevBtn4.classList.add('hidden');
             }
 
-            else if (-num * 500 <= -1500) {
+            else if (-num * 500 <= -2000) {
               nextBtn4.classList.add('hidden');
             }
             else {

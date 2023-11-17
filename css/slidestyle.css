@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-h2 {
+.slide_container h2 {
+    margin: 2rem 2rem;
     color: white;
 }
 
@@ -53,12 +54,13 @@ h2 {
 
 .slide {
     left: 0;
+    margin: 1rem 2rem;
 }
 
 .slide img {
-    width: 400;
-    height: 400px;
-    margin-right: 4rem;
+    width: 300px; 
+    height: 450px;
+    margin-right: 4.25rem;
     object-fit: cover;
 }
 

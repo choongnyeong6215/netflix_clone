@@ -5,11 +5,21 @@
     margin: 5rem auto;
 }
 
+.funPart, .freePart, .kidsPart, .offLinePart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .funTxt, .freeTxt, .kidsTxt, .offlineTxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.freeTxt, .offlineTxt {
+    margin-top: 2rem;
 }
 
 h1 {
@@ -19,12 +29,13 @@ h1 {
 h2 {
     font-size: 2.5rem;
     font-weight: 900;
+    text-align: center;
 }
 
 p {
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -36,7 +47,6 @@ ul {
 li {
     margin-bottom: 1rem;
 }
-
 
 .borderLine {
     background-color: rgb(35,35,35);
@@ -88,7 +98,7 @@ li {
     max-height: 0;
     overflow: hidden;
     padding : 0 1.5rem;
-    transition: all 0.5s;
+    transition: all 0.75s;
 }
 
 .ansList span {
@@ -100,7 +110,7 @@ li {
 }
 
 .active {
-    max-height: 200px;
+    max-height: 300px;
     padding : 1rem;
 }
 
@@ -109,7 +119,7 @@ li {
         display: flex;
         flex-direction: column;
     }
-    .funImg {
+    .funPart {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -118,7 +128,7 @@ li {
         display: flex;
         flex-direction: column;
     }
-    .freeImg {
+    .freePart {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -127,7 +137,7 @@ li {
         display: flex;
         flex-direction: column;
     }
-    .kidsImg {
+    .kidsPart {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -136,7 +146,7 @@ li {
         display: flex;
         flex-direction: column;
     }
-    .offlineImg {
+    .offlinePart {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -148,32 +158,36 @@ li {
         font-size: 2rem;
     }
     .funTxt h2{
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     .funTxt p{
         margin-top: 0.5rem;
-        font-size: 1rem
+        font-size: 1rem;
     }
     .freeTxt h2{
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     .freeTxt p{
         margin-top: 0.5rem;
-        font-size: 1rem
+        font-size: 1rem;
     }
     .kidsTxt h2{
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     .kidsTxt p{
         margin-top: 0.5rem;
-        font-size: 1rem
+        font-size: 1rem;
     }
     .offlineTxt h2{
-        font-size: 2rem;
+        font-size: 1.75rem;
+        text-align: center;
     }
     .offlineTxt p{
         margin-top: 0.5rem;
-        font-size: 1rem
+        font-size: 1rem;
+    }
+    .tvImg, .freeImg, .kidsImg, .offLineImg {
+        width: 85%;
     }
 }
 
@@ -182,42 +196,46 @@ li {
         font-size: 1.5rem;
     }
     .funTxt h2{
-        font-size: 1rem;
+        font-size: 1.45rem;
     }
     .funTxt p{
         margin-top: 0.5rem;
         font-size: 0.5rem;
     }
     .freeTxt h2{
-        font-size: 1rem;
+        font-size: 1.45rem;
     }
     .freeTxt p{
         margin-top: 0.5rem;
         font-size: 0.5rem;
     }
     .kidsTxt h2{
-        font-size: 1rem;
+        font-size: 1.45rem;
     }
     .kidsTxt p{
         margin-top: 0.5rem;
-        font-size: 0.5rem
+        font-size: 0.5rem;
     }
     .offlineTxt h2{
-        font-size: 1rem;
+        font-size: 1.45rem;
+        text-align: center;
     }
     .offlineTxt p{
         margin-top: 0.5rem;
         font-size: 0.5rem;
     }
+    .tvImg, .freeImg, .kidsImg, .offLineImg {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .ansList span {
-        font-size: 1rem;
+        font-size: 1em;
     }
     
     .perfaq span {
-        font-size: 1rem;
+        font-size: 1em;
     }
 }
 
